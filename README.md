@@ -1,6 +1,6 @@
 # Ready Set Bet - Simulator & Analysis
 
-Ready Set Bet is a board game about horse racing.  The horses advance down the track based on dice rolls.  Players bet on which horses will win, place, or show.  The player whose wins the most money after four rounds is the winner.  The code in this repo run simulations of the game -- either from the beginning or from an intermediate state -- to determine what the best bets are to make.  For more information on the game itself, check out:
+Ready Set Bet is a board game about horse racing.  The horses advance down the track based on dice rolls.  Players bet on which horses will win, place, or show.  The player whose wins the most money after four rounds is the winner.  The code in this repo runs simulations of the game -- either from the beginning or from an intermediate state -- to determine the best bets to make.  For more information on the game itself, check out:
 
 https://boardgamegeek.com/boardgame/351040/ready-set-bet
 
@@ -24,16 +24,16 @@ pip install -r requirements.txt
 
 ### Simulator
 
-To try out the simulator, run 
+To try out the simulator, launch a jupyter notebook session in your browser:
 ```
 jupyter notebook 
 ```
-to launch a jupyter notebook session in your browser. Then, navigate to `notebooks` in your jupyter session and open `ReadySetBet_get_best_bets.ipynb`.  Finally, execute the cells to run a target simulation, pause it, and then run 1000 forward simulations of what might happen in the rest of the game.  Running subsequent cells will tell tell you the expected value of each bet, so you can pick the best one!
+Then, navigate to `notebooks` in your jupyter session and open `ReadySetBet_get_best_bets.ipynb`.  Finally, execute the cells to run a target simulation, pause it, and then run 1000 forward simulations of what might happen in the rest of the game.  Running subsequent cells will tell tell you the expected value of each bet, so you can pick the best one!
 
 
 ### Visualizing a Game
 
-f you want to see what a game looks like, you can set `VISUALIZE = True`.  But visualization takes to long to simulate all 1000 games, so set `VISUALIZE = False` for performing the full set of simulations.  Alternatively, try just adding a new cell in the notebook that looks like this:
+If you want to see what a game looks like, you can set `VISUALIZE = True`.  But visualization takes to long to simulate all 1000 games, so set `VISUALIZE = False` for performing the full set of simulations.  Alternatively, try just adding a new cell in the notebook that looks like this:
 
 ```python
 seed(8) # change the seed to see a different game 
