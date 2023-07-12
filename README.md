@@ -33,7 +33,9 @@ Then, navigate to `notebooks` in your jupyter session and open `ReadySetBet_get_
 
 ### Visualizing a Game
 
-If you want to see what a game looks like, you can set `VISUALIZE = True`.  But visualization takes to long to simulate all 1000 games, so set `VISUALIZE = False` for performing the full set of simulations.  Alternatively, try just adding a new cell in the notebook that looks like this:
+If you want to see what a game looks like, you can set `VISUALIZE = True`.  For large numbers of simulations, visualation will take too long, so set `VISUALIZE = False` for performing the full set of simulations.  
+
+Alternatively, if you want to see what a game looks like, just add a new cell in the notebook that looks like this:
 
 ```python
 seed(8) # change the seed to see a different game 
@@ -80,7 +82,7 @@ Here are the top 10 best bets to make given the current state of the race, based
 ('11/12.showed.0', 2.505)
 ```
 
-Based on thi sanalysis, the best two bets are on on 5 and 9 to show (i.e. finish top 3).  That might be surprising as some players might put their money on those two to win or place (i.e. finish top 2).
+Based on this analysis, the best two bets are on on 5 and 9 to show (i.e. finish top 3).  That might be surprising as some players might put their money on those two to win or place (i.e. finish top 2).
 
 Have fun!
 
@@ -93,7 +95,7 @@ Here are the speed/movement averages for each horse:
 
 
 ```
-Average rolls per game 64.4
+Average total rolls per game: 64.4
 
 Average spaces moved per roll:
 {
